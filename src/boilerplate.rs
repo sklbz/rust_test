@@ -324,3 +324,53 @@ fn quick_sort(data: Vec<u8>) -> Vec<u8> {
     result.extend(quick_sort(right));
     result
 }
+
+fn values() -> Vec<u64> {
+    vec![
+        0x1337_5EED,
+        0xCAFEBABE,
+        0x1337_5EED,
+        0xCAFEBABE,
+        0x1337_5EED,
+        0xCAFEBABE,
+        0x1337_5EED,
+        0xCAFEBABE,
+        0x1337_5EED,
+        0xCAFEBABE,
+        0b010100101,
+        0b101010101,
+        0b010101010,
+        0b101010101,
+        0b010101010,
+        0b101010101,
+        0x23_45_67_89,
+        0x0001_389B_CDEF,
+        0x23_45_67_89,
+        0x0001_389B_CDEF,
+        0x23_45_67_89,
+        0x0001_389B_CDEF,
+        0x23_45_67_89,
+        0x0001_389B_CDEF,
+        0x23_45_67_89,
+        0x0001_389B_CDEF,
+        0b001010101,
+        0b101010101,
+    ]
+}
+
+fn text() -> Vec<String> {
+    vec![
+        "Hello world!".to_string(),
+        "The quick brown fox jumps over the lazy dog.".to_string(),
+        "A cat in the hat.".to_string(),
+        "My name is Inigo Montoya.".to_string(),
+        "What the hell are you doing?".to_string(),
+        "TODO: Add more text".to_string(),
+        "DONE: Add more text".to_string(),
+        "Word for word.".to_string(),
+        "A multilayer perceptron is the most basic form of a neural network. The way it works is that it takes a set of vectors as input and produces a set of outputs by using matrix multiplication and vector addition, ie it does a lot of weighted sums.".to_string(),
+        "".to_string(),
+        r#"Eagles are the animals with the best visual acuity. The part of their retina covered with photoreceptors, the fovea is the most 
+        densily covered of the animal kingdom, reaching the minimal physical size for detecting visible light"#.to_string(),
+    ]
+}
