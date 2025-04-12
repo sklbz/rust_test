@@ -1,4 +1,5 @@
 use std::fs::read;
+mod boilerplate;
 
 fn main() {
     println!("Hello, world!");
